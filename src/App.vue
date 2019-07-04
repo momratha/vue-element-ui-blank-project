@@ -1,13 +1,19 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <el-card class="box-card">
+    <div slot="header" class="clearfix">
+      <span>Card name</span>
+      <el-button style="float: right; padding: 3px 0" type="text">Operation button</el-button>
     </div>
-    <router-view/>
-  </div>
+    <div v-for="o in 4" :key="o" class="text item">{{'List item ' + o }}</div>
+  </el-card>
 </template>
 
-<style>
+<script>
+export default {
+  name: "app",
+  components: {}
+};
+</script>
 
+<style>
 </style>

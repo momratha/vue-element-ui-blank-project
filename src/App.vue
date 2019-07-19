@@ -1,19 +1,11 @@
 <template>
-<div>
-   <div id="nav">
+  <div>
+    <div id="nav">
       <router-link to="/">Home</router-link>|
-      <router-link to="/about">Cryto</router-link>
+      <router-link to="/about">about</router-link>
     </div>
     <router-view />
-</div>
+  </div>
 </template>
 
 <script>
-export default {
-  name: "app",
-  components: {}
-};
-</script>
-
-<style>
-</style>
